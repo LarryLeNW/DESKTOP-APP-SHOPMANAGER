@@ -1,7 +1,4 @@
-//* Coder: NGUYEN DOAN CHI THUC
-//* Date of writing code: 29/11/2021
-//* MSSV: PC01573
-//* Class: IT16301
+
 package com.software.dao;
 
 import com.software.entity.HoaDon;
@@ -99,7 +96,62 @@ public class HoaDonDAO extends SoftwareDAO<HoaDon, Integer> {
             throw new RuntimeException(e);
         }
     }
+    public boolean thanhToan(HoaDon hoaDon) {
+        try {
+            // Thực hiện các thao tác cần thiết để cập nhật thông tin của hoá đơn sau khi thanh toán
+            // Ví dụ:
+            hoaDon.setTrangThai("Đã thanh toán");
+            
+            // Cập nhật thông tin hoá đơn vào cơ sở dữ liệu
+            update(hoaDon);
+            
+            // Trả về true để chỉ ra rằng thanh toán thành công
+            return true;
+        } catch (Exception ex) {
+            // Xử lý các ngoại lệ khi có lỗi xảy ra trong quá trình thực hiện thanh toán
+            System.out.println("Lỗi khi thanh toán hoá đơn: " + ex.getMessage());
+            return false;
+        }
+    }
+    public List<HoaDon> selectBySDT(String sdt) {
+        String SELECT_BY_SDT_SQL = "SELECT hd.MaHD, hd.MaNV, hd.MaKH, hd.PhanTramGiam, hd.NgayLapHD, hd.TrangThai, hd.GiaGiam, hd.ThanhTien " +
+                "FROM HDBan hd " +
+                "INNER JOIN KhachHang kh ON hd.MaKH = kh.MaKH " +
+                "WHERE kh.SoDT = ? AND hd.TrangThai = 'Đã thanh toán'";
+        return this.SelectBySQL(SELECT_BY_SDT_SQL, sdt);
+    }
+    public List<HoaDon> selectByTenKH(String tenKH) {
+        String SELECT_BY_TENKH_SQL = "SELECT hd.MaHD, hd.MaNV, hd.MaKH, hd.PhanTramGiam, hd.NgayLapHD, hd.TrangThai, hd.GiaGiam, hd.ThanhTien " +
+                "FROM HDBan hd " +
+                "INNER JOIN KhachHang kh ON hd.MaKH = kh.MaKH " +
+                "WHERE kh.TenKH LIKE ? AND hd.TrangThai = 'Đã thanh toán'";
+        return this.SelectBySQL(SELECT_BY_TENKH_SQL, "%" + tenKH + "%");
+    }
+    public List<HoaDon> selectByMaHDThanhToan(Integer maHD) {
+        String SELECT_BY_MAHDTT_SQL = "SELECT hd.MaHD, hd.MaNV, hd.MaKH, hd.PhanTramGiam, hd.NgayLapHD, hd.TrangThai, hd.GiaGiam, hd.ThanhTien " +
+                "FROM HDBan hd " +
+                "WHERE hd.MaHD = ? AND hd.TrangThai = 'Đã thanh toán'";
+        return this.SelectBySQL(SELECT_BY_MAHDTT_SQL, maHD);
+    }
 
+    public boolean thanhToanHoaDon(HoaDon hoaDon) {
+        try {
+            // Thực hiện các thao tác cần thiết để cập nhật thông tin của hoá đơn sau khi thanh toán
+            // Ví dụ:
+            hoaDon.setTrangThai("Đã thanh toán");
+            
+            // Cập nhật thông tin hoá đơn vào cơ sở dữ liệu
+            update(hoaDon);
+            
+            // Trả về true để chỉ ra rằng thanh toán thành công
+            return true;
+        } catch (Exception ex) {
+            // Xử lý các ngoại lệ khi có lỗi xảy ra trong quá trình thực hiện thanh toán
+            System.out.println("Lỗi khi thanh toán hoá đơn: " + ex.getMessage());
+            return false;
+        }
+    }
+    
     public List<HoaDon> selectByKeyWord(String keyword) {
 //        String sql = "SELECT * FROM HDBan WHERE MaHDCT LIKE ? OR  LIKE ? OR SoDT LIKE ?";
         return SelectBySQL(SELECT_BY_KEYWORD, "%" + keyword + "%", "%" + keyword + "%");

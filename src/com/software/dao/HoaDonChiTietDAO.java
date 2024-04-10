@@ -111,4 +111,5 @@ public class HoaDonChiTietDAO extends SoftwareDAO<HoaDonChiTiet, Integer> {
         }
         return list;
     }
+    
 }

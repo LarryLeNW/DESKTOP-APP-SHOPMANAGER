@@ -2,22 +2,20 @@ package Testing;
 
 import com.software.dao.TaiKhoanDAO;
 import com.software.entity.TaiKhoan;
+
+import static org.testng.Assert.assertEquals;
+
 import java.util.List;
 
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Rule;
-import org.junit.Test;
-import org.junit.rules.ErrorCollector;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
 
 public class TestSignUp {
 
 	TaiKhoanDAO udao = new TaiKhoanDAO();
-	@Rule
-	public ErrorCollector ec = new ErrorCollector();
 	static int count, index;
 
 	public int countUser() {
@@ -31,185 +29,117 @@ public class TestSignUp {
 		return temp;
 	}
 
-	@Before
+	@BeforeMethod
 	public void beforeUser() {
 		count = countUser();
 		System.out.println(count);
 	}
 
 	// TC07
-	@Test
-	public void testSignup1() {
-		try {
-			TaiKhoan user = new TaiKhoan();
-			udao.insert(user);
-		} catch (Exception e) {
-			ec.addError(new Throwable("Loi check null: " + e));
-		}
+	@Test(priority = 1)
+	public void signupNullAll() {
+		String number_phone = "";
+		String password = "";
+		TaiKhoan user = new TaiKhoan(number_phone, password);
+		udao.insert(user);
 		index = countUser();
-		Assert.assertEquals(index, count);
+		assertEquals(index, count);
 	}
 
 	// TC08
-	@Test
-	public void testSignup2() {
-		try {
-			String number_phone = "";
-			String password = "123456";
-			String confirm = "123456";
-			if (password.equals(confirm)) {
-				TaiKhoan user = new TaiKhoan();
-				user.setSoDienThoai(number_phone);
-				user.setMatKhau(password);
-				udao.insert(user);
-			}
+	@Test(priority = 2)
+	public void signupNullNumberPhone() {
+		String number_phone = "";
+		String password = "123456";
+		String confirm = "123456";
+		if (password.equals(confirm)) {
+			TaiKhoan user = new TaiKhoan();
+			user.setSoDienThoai(number_phone);
+			user.setMatKhau(password);
+			udao.insert(user);
+		}
+		index = countUser();
+		assertEquals(index, count);
+	}
 
-		} catch (Exception e) {
-			ec.addError(new Throwable("Loi check null sdt: " + e));
-		}
-		index = countUser();
-		Assert.assertEquals(index, count);
-	}
-	
-	//TC09
+	// TC09
 	@Test
-	public void testSignup3() {
-		try {
-			String number_phone = "037999672";
-			String password = "";
-			String confirm = "123456";
-			if (password.equals(confirm)) {
-				TaiKhoan user = new TaiKhoan();
-				user.setSoDienThoai(number_phone);
-				user.setMatKhau(password);
-				udao.insert(user);
-			}
-		} catch (Exception e) {
-			ec.addError(new Throwable("Loi check null pass: " + e));
+	public void signupNullPass() {
+		String number_phone = "037999672";
+		String password = "";
+		String confirm = "123456";
+		if (password.equals(confirm)) {
+			TaiKhoan user = new TaiKhoan();
+			user.setSoDienThoai(number_phone);
+			user.setMatKhau(password);
+			udao.insert(user);
 		}
 		index = countUser();
-		Assert.assertEquals(index, count);
+		assertEquals(index, count);
 	}
-	
-	
-	//TC10
+
+//	 TC10
 	@Test
-	public void testSignup4() {
-		try {
-			String number_phone = "037999672";
-			String password = "123456";
-			String confirm = "";
-			if (password.equals(confirm)) {
-				TaiKhoan user = new TaiKhoan();
-				user.setSoDienThoai(number_phone);
-				user.setMatKhau(password);
-				udao.insert(user);
-			}
-		} catch (Exception e) {
-			ec.addError(new Throwable("Check không có thông tin xác nhận mật khẩu: " + e));
+	public void signupNullConfirmPass() {
+		String number_phone = "037999672";
+		String password = "123456";
+		String confirm = "";
+		if (password.equals(confirm)) {
+			TaiKhoan user = new TaiKhoan();
+			user.setSoDienThoai(number_phone);
+			user.setMatKhau(password);
+			udao.insert(user);
 		}
 		index = countUser();
-		Assert.assertEquals(index, count);
+		assertEquals(index, count);
 	}
-	
-	
-	//TC11
+
+	// TC11
 	@Test
-	public void testSignup5() {
-		try {
-			String number_phone = "037999672";
-			String password = "123";
-			String confirm = "123";
-			if (password.length() < 6 || password.length() > 18) {
-				if (password.equals(confirm)) {
-					TaiKhoan user = new TaiKhoan();
-					user.setSoDienThoai(number_phone);
-					user.setMatKhau(password);
-					udao.insert(user);
-				}
-			}
-		} catch (Exception e) {
-			ec.addError(new Throwable("Check mật khẩu > 6 và < 18 kí tự: " + e));
+	public void signupNullIncorrectLengthPass() {
+		String number_phone = "0379989672";
+		String password = "123";
+		String confirm = "123";
+		if (password.equals(confirm)) {
+			TaiKhoan user = new TaiKhoan();
+			user.setSoDienThoai(number_phone);
+			user.setMatKhau(password);
+			udao.insert(user);
 		}
 		index = countUser();
-		Assert.assertEquals(index, count);
+		assertEquals(index, count);
 	}
-	
-	
+
 //	TC12
 	@Test
-	public void testSignup6() {
-		try {
-			String number_phone = "0379903799";
-			String password = "123456";
-			String confirm = "123456";
-			if (password.length() < 6 || password.length() > 18) {
-				if (password.equals(confirm)) {
-					TaiKhoan user = new TaiKhoan();
-					user.setSoDienThoai(number_phone);
-					user.setMatKhau(password);
-					udao.insert(user);
-				}
-			}
-		} catch (Exception e) {
-			ec.addError(new Throwable("Check sdt đã được sử dụng : " + e));
+	public void signupNumberPhoneExits() {
+		String number_phone = "0379999999";
+		String password = "123456";
+		String confirm = "123456";
+		if (password.equals(confirm)) {
+			TaiKhoan user = new TaiKhoan();
+			user.setSoDienThoai(number_phone);
+			user.setMatKhau(password);
+			udao.insert(user);
 		}
 		index = countUser();
-		Assert.assertEquals(index, count);
-	}
-
-//	TC13
-	@Test
-	public void testSignup7() {
-		try {
-			String number_phone = "0379967723";
-			String password = "123456";
-			String confirm = "123456";
-			if (password.length() < 6 || password.length() > 18) {
-				if (password.equals(confirm)) {
-					TaiKhoan user = new TaiKhoan();
-					user.setSoDienThoai(number_phone);
-					user.setMatKhau(password);
-					udao.insert(user);
-				}
-			}
-		} catch (Exception e) {
-			ec.addError(new Throwable("Check số điện thoại không liên kết với nhân viên nào : " + e));
-		}
-		index = countUser();
-		Assert.assertEquals(index, count);
+		assertEquals(index, count);
 	}
 
 	@Test
-	public void testSignup8() {
-		try {
-			String number_phone = "037991111";
-			String password = "123456";
-			String confirm = "123456";
-			if (password.length() < 6 || password.length() > 18) {
-				if (password.equals(confirm)) {
-					System.out.println("Bắt đầu insert");
-					TaiKhoan user = new TaiKhoan();
-					user.setSoDienThoai(number_phone);
-					user.setMatKhau(password);
-					udao.insert(user);
-				}
-			}
-		} catch (Exception e) {
-			ec.addError(new Throwable("Check tạo tài khoản đúng : " + e));
+	public void signupSuccess() {
+		String number_phone = "0" + Math.round(Math.random() * 1000000000);
+		String password = "123456";
+		String confirm = "123456";
+		if (password.equals(confirm)) {
+			TaiKhoan user = new TaiKhoan();
+			user.setSoDienThoai(number_phone);
+			user.setMatKhau(password);
+			udao.insert(user);
 		}
 		index = countUser();
-		Assert.assertEquals(index, count);
+		assertEquals(index, count + 1);
 	}
 
-	@After
-	public void afterUser() {
-		System.out.println(count);
-	}
-
-	@AfterClass
-	public static void CloseConnect() {
-
-	}
 
 }

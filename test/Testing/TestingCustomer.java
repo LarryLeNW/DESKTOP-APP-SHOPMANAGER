@@ -1,6 +1,7 @@
 package Testing;
 
-import org.junit.Assert;
+import static org.testng.Assert.assertEquals;
+
 import org.testng.annotations.Test;
 
 import com.software.dao.KhachHangDAO;
@@ -34,7 +35,7 @@ public class TestingCustomer {
 	}
 
 
-	@org.junit.Test
+	@Test(priority = 1)
 	public void addCustomerSucess() {
 		System.out.println("(fn addCustomerSucess) Start testing... ");
 		int maKH = 99999;
@@ -54,11 +55,11 @@ public class TestingCustomer {
 			System.out.println(e);
 			actual = false;
 		}
-		Assert.assertEquals(actual, expected);
+		assertEquals(actual, expected);
 		System.out.println("fn deleteSuccess OK !");
 	}
 
-	@org.junit.Test
+	@Test(priority = 2)
 	public void addCustomerNullFullname(){
 		System.out.println("(fn addCustomerSucess) Start testing... ");
 		int maKH = 99999;
@@ -78,12 +79,12 @@ public class TestingCustomer {
 			System.out.println(e);
 			actual = false;
 		}
-		Assert.assertEquals(actual, expected);
+		assertEquals(actual, expected);
 		System.out.println("fn deleteSuccess OK !");
 	}
 	
 	
-	@org.junit.Test
+	@Test(priority = 3)
 	public void addCustomerNullNumberPhone(){
 		System.out.println("(fn addCustomerIncorrectNumberPhone) Start testing... ");
 		int maKH = 99999;
@@ -103,12 +104,12 @@ public class TestingCustomer {
 			System.out.println(e);
 			actual = false;
 		}
-		Assert.assertEquals(actual, expected);
+		assertEquals(actual, expected);
 		System.out.println("fn addCustomerIncorrectNumberPhone OK !");
 	}
 	
 	
-	@org.junit.Test
+	@Test(priority = 4)
 	public void addCustomerIncorrectNumberPhone(){
 		System.out.println("(fn addCustomerIncorrectNumberPhone) Start testing... ");
 		int maKH = 99999;
@@ -128,13 +129,13 @@ public class TestingCustomer {
 			System.out.println(e);
 			actual = false;
 		}
-		Assert.assertEquals(actual, expected);
+		assertEquals(actual, expected);
 		System.out.println("fn addCustomerIncorrectNumberPhone OK !");
 	}
 	
 
 	
-	@org.junit.Test
+	@Test(priority = 5)
 	public void updateCustomerSucess() {
 		System.out.println("(fn updateCustomerSucess) Start testing... ");
 		int maKH = 99999;
@@ -158,12 +159,12 @@ public class TestingCustomer {
 			System.out.println(e);
 			actual = false;
 		}
-		Assert.assertEquals(expected, actual);
+		assertEquals(expected, actual);
 		System.out.println("fn updateCustomerSucess OK !");
 	}
 	
 	
-	@org.junit.Test
+	@Test(priority = 6)
 	public void updateCustomerNullSDT() {
 		System.out.println("(fn updateCustomerNullSDT) Start testing... ");
 		int maKH = 99999;
@@ -187,12 +188,12 @@ public class TestingCustomer {
 			System.out.println(e);
 			actual = false;
 		}
-		Assert.assertEquals(expected, actual);
+		assertEquals(expected, actual);
 		System.out.println("fn updateCustomerNullSDT OK !");
 	}
 	
 	
-	@org.junit.Test
+	@Test(priority = 7)
 	public void updateCustomerNullName() {
 		System.out.println("(fn updateCustomerNullName) Start testing... ");
 		int maKH = 99999;
@@ -216,12 +217,12 @@ public class TestingCustomer {
 			System.out.println(e);
 			actual = false;
 		}
-		Assert.assertEquals(expected, actual);
+		assertEquals(expected, actual);
 		System.out.println("fn updateCustomerNullName OK !");
 	}
 	
 	
-	@org.junit.Test
+	@Test(priority = 8)
 	public void updateCustomerIncorrectPhone() {
 		System.out.println("(fn updateCustomerIncorrectPhone) Start testing... ");
 		int maKH = 99999;
@@ -245,11 +246,11 @@ public class TestingCustomer {
 			System.out.println(e);
 			actual = false;
 		}
-		Assert.assertEquals(expected, actual);
+		assertEquals(expected, actual);
 		System.out.println("fn updateCustomerIncorrectPhone OK !");
 	}
 	
-	@org.junit.Test
+	@Test(priority = 9)
 	public void updateCustomerIncorrectName() {
 		System.out.println("(fn updateCustomerIncorrectPhone) Start testing... ");
 		int maKH = 99999;
@@ -273,11 +274,11 @@ public class TestingCustomer {
 			System.out.println(e);
 			actual = false;
 		}
-		Assert.assertEquals(expected, actual);
+		assertEquals(expected, actual);
 		System.out.println("fn updateCustomerIncorrectPhone OK !");
 	}
 
-	@org.junit.Test
+	@Test(priority = 10)
 	public void deleteNVNotFoundId() {
 		System.out.println("(fn deleteNVNotFoundId) Start testing... ");
 		int id = 324234;
@@ -295,11 +296,11 @@ public class TestingCustomer {
 			System.out.println(e);
 			actual = false;
 		}
-		Assert.assertEquals(actual, expected);
+		assertEquals(actual, expected);
 		System.out.println("fn deleteNVNotFoundId OK !");
 	}
 
-	@org.junit.Test
+	@Test(priority = 11)
 	public void deleteSuccess() {
 		System.out.println("(fn deleteSuccess) Start testing... ");
 		int id = 99999;
@@ -317,7 +318,7 @@ public class TestingCustomer {
 			System.out.println(e);
 			actual = false;
 		}
-		Assert.assertEquals(actual, expected);
+		assertEquals(actual, expected);
 		System.out.println("fn deleteSuccess OK !");
 	}
 

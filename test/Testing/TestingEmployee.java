@@ -1,9 +1,9 @@
 package Testing;
 
-import static org.junit.Assert.assertFalse;
 
-import org.junit.Assert;
-import org.junit.Test;
+import static org.testng.Assert.assertEquals;
+
+import org.testng.annotations.Test;
 
 import com.software.dao.NhanVienDAO;
 import com.software.entity.NhanVien;
@@ -71,7 +71,7 @@ public class TestingEmployee {
 			System.out.println(e);
 			actual = false;
 		}
-		Assert.assertEquals(actual, expected);
+		assertEquals(actual, expected);
 		System.out.println("fn testAddNVSuccess OK !");
 	}
 
@@ -104,7 +104,7 @@ public class TestingEmployee {
 			actual = false;
 		}
 
-		Assert.assertEquals(actual, expected);
+		assertEquals(actual, expected);
 		System.out.println("fn testAddNullMaNV OK !");
 	}
 
@@ -137,7 +137,7 @@ public class TestingEmployee {
 			actual = false;
 		}
 
-		Assert.assertEquals(actual, expected);
+		assertEquals(actual, expected);
 		System.out.println("fn testAddNullFullname OK !");
 	}
 
@@ -170,7 +170,7 @@ public class TestingEmployee {
 			actual = false;
 		}
 
-		Assert.assertEquals(actual, expected);
+		assertEquals(actual, expected);
 		System.out.println("fn testAddNullNumberPhone OK !");
 	}
 
@@ -203,7 +203,7 @@ public class TestingEmployee {
 			actual = false;
 		}
 
-		Assert.assertEquals(actual, expected);
+		assertEquals(actual, expected);
 		System.out.println("fn testAddNullEmail OK !");
 	}
 
@@ -236,7 +236,7 @@ public class TestingEmployee {
 			actual = false;
 		}
 
-		Assert.assertEquals(actual, expected);
+		assertEquals(actual, expected);
 		System.out.println("fn testAddNullCMND OK !");
 	}
 
@@ -269,7 +269,7 @@ public class TestingEmployee {
 			actual = false;
 		}
 
-		Assert.assertEquals(actual, expected);
+		assertEquals(actual, expected);
 		System.out.println("fn testAddInCorrectCMND OK !");
 	}
 	
@@ -303,7 +303,7 @@ public class TestingEmployee {
 			actual = false;
 		}
 
-		Assert.assertEquals(actual, expected);
+		assertEquals(actual, expected);
 		System.out.println("fn testAddMaNVIsExits OK !");
 	}
 
@@ -337,7 +337,7 @@ public class TestingEmployee {
 			actual = false;
 		}
 
-		Assert.assertEquals(actual, expected);
+		assertEquals(actual, expected);
 		System.out.println("fn testAddMaNVIsExits OK !");
 	}
 	
@@ -375,7 +375,7 @@ public class TestingEmployee {
 			System.out.println(e);
 			actual = false;
 		}
-		Assert.assertEquals(actual, expected);
+		assertEquals(actual, expected);
 		System.out.println("fn updateNVSuccess OK !");
 	}
 
@@ -413,7 +413,7 @@ public class TestingEmployee {
 			System.out.println(e);
 			actual = false;
 		}
-		Assert.assertEquals(actual, expected);
+		assertEquals(actual, expected);
 		System.out.println("fn updateIncorrectCMND OK !");
 	}
 	
@@ -451,7 +451,7 @@ public class TestingEmployee {
 			System.out.println(e);
 			actual = false;
 		}
-		Assert.assertEquals(actual, expected);
+		assertEquals(actual, expected);
 		System.out.println("fn updateIncorrectNumberPhone OK !");
 	}
 
@@ -473,7 +473,7 @@ public class TestingEmployee {
 			System.out.println(e);
 			actual = false;
 		}
-		Assert.assertEquals(actual, expected);
+		assertEquals(actual, expected);
 		System.out.println("fn deleteNVNotFoundId OK !");
 	}
 
@@ -495,7 +495,7 @@ public class TestingEmployee {
 			System.out.println(e);
 			actual = false;
 		}
-		Assert.assertEquals(actual, expected);
+		assertEquals(actual, expected);
 		System.out.println("fn deleteSuccess OK !");
 	}
 }
