@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Parameters Testing Test Suite">
+	<test name="asm">
+		<classes>
+			<class name="Testing.TestingCategory" />
+			<class name="Testing.TestingEmployee" />
+			<class name="Testing.TestingCustomer" />
+			<class name="Testing.TestLogin" />
+			<class name="Testing.TestSignUp" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

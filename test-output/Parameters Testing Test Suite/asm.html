@@ -1,0 +1,329 @@
+<html>
+<head>
+<title>TestNG:  asm</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>asm</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>50/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Apr 10 10:12:10 ICT 2024</td>
+</tr>
+<tr><td>Total time:</td><td>1 seconds (1786 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Testing.TestLogin.loginSuccess()'><b>loginSuccess</b><br>Test class: Testing.TestLogin</td>
+<td></td>
+<td>0</td>
+<td>Testing.TestLogin@4562e04d</td></tr>
+<tr>
+<td title='Testing.TestingCategory.UpdateNullName()'><b>UpdateNullName</b><br>Test class: Testing.TestingCategory</td>
+<td></td>
+<td>0</td>
+<td>Testing.TestingCategory@3c19aaa5</td></tr>
+<tr>
+<td title='Testing.TestingEmployee.deleteSuccess()'><b>deleteSuccess</b><br>Test class: Testing.TestingEmployee</td>
+<td></td>
+<td>0</td>
+<td>Testing.TestingEmployee@4c371370</td></tr>
+<tr>
+<td title='Testing.TestingCategory.insertNullId()'><b>insertNullId</b><br>Test class: Testing.TestingCategory</td>
+<td></td>
+<td>0</td>
+<td>Testing.TestingCategory@3c19aaa5</td></tr>
+<tr>
+<td title='Testing.TestingEmployee.testAddMaNVIsExits()'><b>testAddMaNVIsExits</b><br>Test class: Testing.TestingEmployee</td>
+<td></td>
+<td>0</td>
+<td>Testing.TestingEmployee@4c371370</td></tr>
+<tr>
+<td title='Testing.TestingCustomer.updateCustomerSucess()'><b>updateCustomerSucess</b><br>Test class: Testing.TestingCustomer</td>
+<td></td>
+<td>0</td>
+<td>Testing.TestingCustomer@3023df74</td></tr>
+<tr>
+<td title='Testing.TestingEmployee.testAddNullCMND()'><b>testAddNullCMND</b><br>Test class: Testing.TestingEmployee</td>
+<td></td>
+<td>0</td>
+<td>Testing.TestingEmployee@4c371370</td></tr>
+<tr>
+<td title='Testing.TestSignUp.signupNullPass()'><b>signupNullPass</b><br>Test class: Testing.TestSignUp</td>
+<td></td>
+<td>0</td>
+<td>Testing.TestSignUp@31304f14</td></tr>
+<tr>
+<td title='Testing.TestingEmployee.testAddCMNDIsExits()'><b>testAddCMNDIsExits</b><br>Test class: Testing.TestingEmployee</td>
+<td></td>
+<td>0</td>
+<td>Testing.TestingEmployee@4c371370</td></tr>
+<tr>
+<td title='Testing.TestLogin.loginNullUsername()'><b>loginNullUsername</b><br>Test class: Testing.TestLogin</td>
+<td></td>
+<td>0</td>
+<td>Testing.TestLogin@4562e04d</td></tr>
+<tr>
+<td title='Testing.TestingCustomer.deleteSuccess()'><b>deleteSuccess</b><br>Test class: Testing.TestingCustomer</td>
+<td></td>
+<td>0</td>
+<td>Testing.TestingCustomer@3023df74</td></tr>
+<tr>
+<td title='Testing.TestingEmployee.updateNVSuccess()'><b>updateNVSuccess</b><br>Test class: Testing.TestingEmployee</td>
+<td></td>
+<td>0</td>
+<td>Testing.TestingEmployee@4c371370</td></tr>
+<tr>
+<td title='Testing.TestingCategory.deleteLoaiSPNoExitsProduct()'><b>deleteLoaiSPNoExitsProduct</b><br>Test class: Testing.TestingCategory</td>
+<td></td>
+<td>0</td>
+<td>Testing.TestingCategory@3c19aaa5</td></tr>
+<tr>
+<td title='Testing.TestSignUp.signupNumberPhoneExits()'><b>signupNumberPhoneExits</b><br>Test class: Testing.TestSignUp</td>
+<td></td>
+<td>0</td>
+<td>Testing.TestSignUp@31304f14</td></tr>
+<tr>
+<td title='Testing.TestingCategory.testDeleteLoaiSPWithProducts()'><b>testDeleteLoaiSPWithProducts</b><br>Test class: Testing.TestingCategory</td>
+<td></td>
+<td>0</td>
+<td>Testing.TestingCategory@3c19aaa5</td></tr>
+<tr>
+<td title='Testing.TestingCategory.deleteWithoutId()'><b>deleteWithoutId</b><br>Test class: Testing.TestingCategory</td>
+<td></td>
+<td>0</td>
+<td>Testing.TestingCategory@3c19aaa5</td></tr>
+<tr>
+<td title='Testing.TestingEmployee.testAddNullMaNV()'><b>testAddNullMaNV</b><br>Test class: Testing.TestingEmployee</td>
+<td></td>
+<td>0</td>
+<td>Testing.TestingEmployee@4c371370</td></tr>
+<tr>
+<td title='Testing.TestingEmployee.testAddNullEmail()'><b>testAddNullEmail</b><br>Test class: Testing.TestingEmployee</td>
+<td></td>
+<td>0</td>
+<td>Testing.TestingEmployee@4c371370</td></tr>
+<tr>
+<td title='Testing.TestingCustomer.updateCustomerIncorrectPhone()'><b>updateCustomerIncorrectPhone</b><br>Test class: Testing.TestingCustomer</td>
+<td></td>
+<td>0</td>
+<td>Testing.TestingCustomer@3023df74</td></tr>
+<tr>
+<td title='Testing.TestingCategory.UpdateSuccessFullData()'><b>UpdateSuccessFullData</b><br>Test class: Testing.TestingCategory</td>
+<td></td>
+<td>0</td>
+<td>Testing.TestingCategory@3c19aaa5</td></tr>
+<tr>
+<td title='Testing.TestingEmployee.updateIncorrectCMND()'><b>updateIncorrectCMND</b><br>Test class: Testing.TestingEmployee</td>
+<td></td>
+<td>0</td>
+<td>Testing.TestingEmployee@4c371370</td></tr>
+<tr>
+<td title='Testing.TestLogin.loginNullPass()'><b>loginNullPass</b><br>Test class: Testing.TestLogin</td>
+<td></td>
+<td>0</td>
+<td>Testing.TestLogin@4562e04d</td></tr>
+<tr>
+<td title='Testing.TestingCustomer.addCustomerNullFullname()'><b>addCustomerNullFullname</b><br>Test class: Testing.TestingCustomer</td>
+<td></td>
+<td>0</td>
+<td>Testing.TestingCustomer@3023df74</td></tr>
+<tr>
+<td title='Testing.TestLogin.loginIncorrectAll()'><b>loginIncorrectAll</b><br>Test class: Testing.TestLogin</td>
+<td></td>
+<td>0</td>
+<td>Testing.TestLogin@4562e04d</td></tr>
+<tr>
+<td title='Testing.TestLogin.loginIncorrectPass()'><b>loginIncorrectPass</b><br>Test class: Testing.TestLogin</td>
+<td></td>
+<td>0</td>
+<td>Testing.TestLogin@4562e04d</td></tr>
+<tr>
+<td title='Testing.TestingCategory.insertSuccessWithoutDescription()'><b>insertSuccessWithoutDescription</b><br>Test class: Testing.TestingCategory</td>
+<td></td>
+<td>0</td>
+<td>Testing.TestingCategory@3c19aaa5</td></tr>
+<tr>
+<td title='Testing.TestingEmployee.deleteNVNotFoundId()'><b>deleteNVNotFoundId</b><br>Test class: Testing.TestingEmployee</td>
+<td></td>
+<td>0</td>
+<td>Testing.TestingEmployee@4c371370</td></tr>
+<tr>
+<td title='Testing.TestingCategory.insertSuccess()'><b>insertSuccess</b><br>Test class: Testing.TestingCategory</td>
+<td></td>
+<td>0</td>
+<td>Testing.TestingCategory@3c19aaa5</td></tr>
+<tr>
+<td title='Testing.TestingCustomer.updateCustomerNullSDT()'><b>updateCustomerNullSDT</b><br>Test class: Testing.TestingCustomer</td>
+<td></td>
+<td>0</td>
+<td>Testing.TestingCustomer@3023df74</td></tr>
+<tr>
+<td title='Testing.TestingEmployee.testAddNullNumberPhone()'><b>testAddNullNumberPhone</b><br>Test class: Testing.TestingEmployee</td>
+<td></td>
+<td>0</td>
+<td>Testing.TestingEmployee@4c371370</td></tr>
+<tr>
+<td title='Testing.TestingCustomer.updateCustomerNullName()'><b>updateCustomerNullName</b><br>Test class: Testing.TestingCustomer</td>
+<td></td>
+<td>0</td>
+<td>Testing.TestingCustomer@3023df74</td></tr>
+<tr>
+<td title='Testing.TestingEmployee.testAddNullFullname()'><b>testAddNullFullname</b><br>Test class: Testing.TestingEmployee</td>
+<td></td>
+<td>0</td>
+<td>Testing.TestingEmployee@4c371370</td></tr>
+<tr>
+<td title='Testing.TestingCustomer.deleteNVNotFoundId()'><b>deleteNVNotFoundId</b><br>Test class: Testing.TestingCustomer</td>
+<td></td>
+<td>0</td>
+<td>Testing.TestingCustomer@3023df74</td></tr>
+<tr>
+<td title='Testing.TestSignUp.signupNullIncorrectLengthPass()'><b>signupNullIncorrectLengthPass</b><br>Test class: Testing.TestSignUp</td>
+<td></td>
+<td>0</td>
+<td>Testing.TestSignUp@31304f14</td></tr>
+<tr>
+<td title='Testing.TestSignUp.signupNullConfirmPass()'><b>signupNullConfirmPass</b><br>Test class: Testing.TestSignUp</td>
+<td></td>
+<td>0</td>
+<td>Testing.TestSignUp@31304f14</td></tr>
+<tr>
+<td title='Testing.TestLogin.loginNullUsernameAndPass()'><b>loginNullUsernameAndPass</b><br>Test class: Testing.TestLogin</td>
+<td></td>
+<td>0</td>
+<td>Testing.TestLogin@4562e04d</td></tr>
+<tr>
+<td title='Testing.TestingCategory.UpdateSuccessWithoutDescription()'><b>UpdateSuccessWithoutDescription</b><br>Test class: Testing.TestingCategory</td>
+<td></td>
+<td>0</td>
+<td>Testing.TestingCategory@3c19aaa5</td></tr>
+<tr>
+<td title='Testing.TestLogin.loginIncorrectFullname()'><b>loginIncorrectFullname</b><br>Test class: Testing.TestLogin</td>
+<td></td>
+<td>0</td>
+<td>Testing.TestLogin@4562e04d</td></tr>
+<tr>
+<td title='Testing.TestingCategory.testInsertNullName()'><b>testInsertNullName</b><br>Test class: Testing.TestingCategory</td>
+<td></td>
+<td>0</td>
+<td>Testing.TestingCategory@3c19aaa5</td></tr>
+<tr>
+<td title='Testing.TestingCustomer.updateCustomerIncorrectName()'><b>updateCustomerIncorrectName</b><br>Test class: Testing.TestingCustomer</td>
+<td></td>
+<td>0</td>
+<td>Testing.TestingCustomer@3023df74</td></tr>
+<tr>
+<td title='Testing.TestSignUp.signupNullNumberPhone()'><b>signupNullNumberPhone</b><br>Test class: Testing.TestSignUp</td>
+<td></td>
+<td>0</td>
+<td>Testing.TestSignUp@31304f14</td></tr>
+<tr>
+<td title='Testing.TestingCustomer.addCustomerNullNumberPhone()'><b>addCustomerNullNumberPhone</b><br>Test class: Testing.TestingCustomer</td>
+<td></td>
+<td>0</td>
+<td>Testing.TestingCustomer@3023df74</td></tr>
+<tr>
+<td title='Testing.TestingCategory.testInsertExitsId()'><b>testInsertExitsId</b><br>Test class: Testing.TestingCategory</td>
+<td></td>
+<td>0</td>
+<td>Testing.TestingCategory@3c19aaa5</td></tr>
+<tr>
+<td title='Testing.TestingEmployee.updateIncorrectNumberPhone()'><b>updateIncorrectNumberPhone</b><br>Test class: Testing.TestingEmployee</td>
+<td></td>
+<td>0</td>
+<td>Testing.TestingEmployee@4c371370</td></tr>
+<tr>
+<td title='Testing.TestingEmployee.testAddInCorrectCMND()'><b>testAddInCorrectCMND</b><br>Test class: Testing.TestingEmployee</td>
+<td></td>
+<td>0</td>
+<td>Testing.TestingEmployee@4c371370</td></tr>
+<tr>
+<td title='Testing.TestSignUp.signupNullAll()'><b>signupNullAll</b><br>Test class: Testing.TestSignUp</td>
+<td></td>
+<td>0</td>
+<td>Testing.TestSignUp@31304f14</td></tr>
+<tr>
+<td title='Testing.TestSignUp.signupSuccess()'><b>signupSuccess</b><br>Test class: Testing.TestSignUp</td>
+<td></td>
+<td>0</td>
+<td>Testing.TestSignUp@31304f14</td></tr>
+<tr>
+<td title='Testing.TestingEmployee.testAddNVSuccess()'><b>testAddNVSuccess</b><br>Test class: Testing.TestingEmployee</td>
+<td></td>
+<td>0</td>
+<td>Testing.TestingEmployee@4c371370</td></tr>
+<tr>
+<td title='Testing.TestingCustomer.addCustomerIncorrectNumberPhone()'><b>addCustomerIncorrectNumberPhone</b><br>Test class: Testing.TestingCustomer</td>
+<td></td>
+<td>0</td>
+<td>Testing.TestingCustomer@3023df74</td></tr>
+<tr>
+<td title='Testing.TestingCustomer.addCustomerSucess()'><b>addCustomerSucess</b><br>Test class: Testing.TestingCustomer</td>
+<td></td>
+<td>0</td>
+<td>Testing.TestingCustomer@3023df74</td></tr>
+</table><p>
+</body>
+</html>

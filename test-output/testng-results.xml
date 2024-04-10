@@ -1,69 +1,249 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+<testng-results ignored="0" total="50" passed="50" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-10T09:39:56 ICT" name="Default suite" finished-at="2024-04-10T09:39:57 ICT" duration-ms="1136">
+  <suite started-at="2024-04-10T10:12:10 ICT" name="Parameters Testing Test Suite" finished-at="2024-04-10T10:12:11 ICT" duration-ms="1786">
     <groups>
     </groups>
-    <test started-at="2024-04-10T09:39:56 ICT" name="Default test" finished-at="2024-04-10T09:39:57 ICT" duration-ms="1136">
+    <test started-at="2024-04-10T10:12:10 ICT" name="asm" finished-at="2024-04-10T10:12:11 ICT" duration-ms="1786">
       <class name="Testing.TestSignUp">
-        <test-method is-config="true" signature="beforeUser()[pri:0, instance:Testing.TestSignUp@36902638]" started-at="2024-04-10T09:39:56 ICT" name="beforeUser" finished-at="2024-04-10T09:39:57 ICT" duration-ms="464" status="PASS">
+        <test-method is-config="true" signature="beforeUser()[pri:0, instance:Testing.TestSignUp@31304f14]" started-at="2024-04-10T10:12:11 ICT" name="beforeUser" finished-at="2024-04-10T10:12:11 ICT" duration-ms="17" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeUser -->
-        <test-method signature="signupNullConfirmPass()[pri:0, instance:Testing.TestSignUp@36902638]" started-at="2024-04-10T09:39:57 ICT" name="signupNullConfirmPass" finished-at="2024-04-10T09:39:57 ICT" duration-ms="46" status="PASS">
+        <test-method signature="signupNullConfirmPass()[pri:0, instance:Testing.TestSignUp@31304f14]" started-at="2024-04-10T10:12:11 ICT" name="signupNullConfirmPass" finished-at="2024-04-10T10:12:11 ICT" duration-ms="17" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signupNullConfirmPass -->
-        <test-method is-config="true" signature="beforeUser()[pri:0, instance:Testing.TestSignUp@36902638]" started-at="2024-04-10T09:39:57 ICT" name="beforeUser" finished-at="2024-04-10T09:39:57 ICT" duration-ms="26" status="PASS">
+        <test-method is-config="true" signature="beforeUser()[pri:0, instance:Testing.TestSignUp@31304f14]" started-at="2024-04-10T10:12:11 ICT" name="beforeUser" finished-at="2024-04-10T10:12:11 ICT" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeUser -->
-        <test-method signature="signupNullIncorrectLengthPass()[pri:0, instance:Testing.TestSignUp@36902638]" started-at="2024-04-10T09:39:57 ICT" name="signupNullIncorrectLengthPass" finished-at="2024-04-10T09:39:57 ICT" duration-ms="30" status="PASS">
+        <test-method signature="signupNullIncorrectLengthPass()[pri:0, instance:Testing.TestSignUp@31304f14]" started-at="2024-04-10T10:12:11 ICT" name="signupNullIncorrectLengthPass" finished-at="2024-04-10T10:12:11 ICT" duration-ms="18" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signupNullIncorrectLengthPass -->
-        <test-method is-config="true" signature="beforeUser()[pri:0, instance:Testing.TestSignUp@36902638]" started-at="2024-04-10T09:39:57 ICT" name="beforeUser" finished-at="2024-04-10T09:39:57 ICT" duration-ms="64" status="PASS">
+        <test-method is-config="true" signature="beforeUser()[pri:0, instance:Testing.TestSignUp@31304f14]" started-at="2024-04-10T10:12:11 ICT" name="beforeUser" finished-at="2024-04-10T10:12:11 ICT" duration-ms="18" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeUser -->
-        <test-method signature="signupNullPass()[pri:0, instance:Testing.TestSignUp@36902638]" started-at="2024-04-10T09:39:57 ICT" name="signupNullPass" finished-at="2024-04-10T09:39:57 ICT" duration-ms="56" status="PASS">
+        <test-method signature="signupNullPass()[pri:0, instance:Testing.TestSignUp@31304f14]" started-at="2024-04-10T10:12:11 ICT" name="signupNullPass" finished-at="2024-04-10T10:12:11 ICT" duration-ms="16" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signupNullPass -->
-        <test-method is-config="true" signature="beforeUser()[pri:0, instance:Testing.TestSignUp@36902638]" started-at="2024-04-10T09:39:57 ICT" name="beforeUser" finished-at="2024-04-10T09:39:57 ICT" duration-ms="18" status="PASS">
+        <test-method is-config="true" signature="beforeUser()[pri:0, instance:Testing.TestSignUp@31304f14]" started-at="2024-04-10T10:12:11 ICT" name="beforeUser" finished-at="2024-04-10T10:12:11 ICT" duration-ms="16" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeUser -->
-        <test-method signature="signupNumberPhoneExits()[pri:0, instance:Testing.TestSignUp@36902638]" started-at="2024-04-10T09:39:57 ICT" name="signupNumberPhoneExits" finished-at="2024-04-10T09:39:57 ICT" duration-ms="57" status="PASS">
+        <test-method signature="signupNumberPhoneExits()[pri:0, instance:Testing.TestSignUp@31304f14]" started-at="2024-04-10T10:12:11 ICT" name="signupNumberPhoneExits" finished-at="2024-04-10T10:12:11 ICT" duration-ms="28" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signupNumberPhoneExits -->
-        <test-method is-config="true" signature="beforeUser()[pri:0, instance:Testing.TestSignUp@36902638]" started-at="2024-04-10T09:39:57 ICT" name="beforeUser" finished-at="2024-04-10T09:39:57 ICT" duration-ms="25" status="PASS">
+        <test-method is-config="true" signature="beforeUser()[pri:0, instance:Testing.TestSignUp@31304f14]" started-at="2024-04-10T10:12:11 ICT" name="beforeUser" finished-at="2024-04-10T10:12:11 ICT" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeUser -->
-        <test-method signature="signupSuccess()[pri:0, instance:Testing.TestSignUp@36902638]" started-at="2024-04-10T09:39:57 ICT" name="signupSuccess" finished-at="2024-04-10T09:39:57 ICT" duration-ms="134" status="PASS">
+        <test-method signature="signupSuccess()[pri:0, instance:Testing.TestSignUp@31304f14]" started-at="2024-04-10T10:12:11 ICT" name="signupSuccess" finished-at="2024-04-10T10:12:11 ICT" duration-ms="27" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signupSuccess -->
-        <test-method is-config="true" signature="beforeUser()[pri:0, instance:Testing.TestSignUp@36902638]" started-at="2024-04-10T09:39:57 ICT" name="beforeUser" finished-at="2024-04-10T09:39:57 ICT" duration-ms="19" status="PASS">
+        <test-method is-config="true" signature="beforeUser()[pri:0, instance:Testing.TestSignUp@31304f14]" started-at="2024-04-10T10:12:11 ICT" name="beforeUser" finished-at="2024-04-10T10:12:11 ICT" duration-ms="13" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeUser -->
-        <test-method signature="signupNullAll()[pri:1, instance:Testing.TestSignUp@36902638]" started-at="2024-04-10T09:39:57 ICT" name="signupNullAll" finished-at="2024-04-10T09:39:57 ICT" duration-ms="69" status="PASS">
+        <test-method signature="signupNullAll()[pri:1, instance:Testing.TestSignUp@31304f14]" started-at="2024-04-10T10:12:11 ICT" name="signupNullAll" finished-at="2024-04-10T10:12:11 ICT" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signupNullAll -->
-        <test-method is-config="true" signature="beforeUser()[pri:0, instance:Testing.TestSignUp@36902638]" started-at="2024-04-10T09:39:57 ICT" name="beforeUser" finished-at="2024-04-10T09:39:57 ICT" duration-ms="56" status="PASS">
+        <test-method is-config="true" signature="beforeUser()[pri:0, instance:Testing.TestSignUp@31304f14]" started-at="2024-04-10T10:12:11 ICT" name="beforeUser" finished-at="2024-04-10T10:12:11 ICT" duration-ms="16" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeUser -->
-        <test-method signature="signupNullNumberPhone()[pri:2, instance:Testing.TestSignUp@36902638]" started-at="2024-04-10T09:39:57 ICT" name="signupNullNumberPhone" finished-at="2024-04-10T09:39:57 ICT" duration-ms="21" status="PASS">
+        <test-method signature="signupNullNumberPhone()[pri:2, instance:Testing.TestSignUp@31304f14]" started-at="2024-04-10T10:12:11 ICT" name="signupNullNumberPhone" finished-at="2024-04-10T10:12:11 ICT" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signupNullNumberPhone -->
       </class> <!-- Testing.TestSignUp -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="Testing.TestLogin">
+        <test-method signature="loginNullUsernameAndPass()[pri:1, instance:Testing.TestLogin@4562e04d]" started-at="2024-04-10T10:12:11 ICT" name="loginNullUsernameAndPass" finished-at="2024-04-10T10:12:11 ICT" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginNullUsernameAndPass -->
+        <test-method signature="loginNullUsername()[pri:2, instance:Testing.TestLogin@4562e04d]" started-at="2024-04-10T10:12:11 ICT" name="loginNullUsername" finished-at="2024-04-10T10:12:11 ICT" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginNullUsername -->
+        <test-method signature="loginNullPass()[pri:3, instance:Testing.TestLogin@4562e04d]" started-at="2024-04-10T10:12:11 ICT" name="loginNullPass" finished-at="2024-04-10T10:12:11 ICT" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginNullPass -->
+        <test-method signature="loginIncorrectAll()[pri:4, instance:Testing.TestLogin@4562e04d]" started-at="2024-04-10T10:12:11 ICT" name="loginIncorrectAll" finished-at="2024-04-10T10:12:11 ICT" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginIncorrectAll -->
+        <test-method signature="loginIncorrectFullname()[pri:5, instance:Testing.TestLogin@4562e04d]" started-at="2024-04-10T10:12:11 ICT" name="loginIncorrectFullname" finished-at="2024-04-10T10:12:11 ICT" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginIncorrectFullname -->
+        <test-method signature="loginIncorrectPass()[pri:6, instance:Testing.TestLogin@4562e04d]" started-at="2024-04-10T10:12:11 ICT" name="loginIncorrectPass" finished-at="2024-04-10T10:12:11 ICT" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginIncorrectPass -->
+        <test-method signature="loginSuccess()[pri:7, instance:Testing.TestLogin@4562e04d]" started-at="2024-04-10T10:12:11 ICT" name="loginSuccess" finished-at="2024-04-10T10:12:11 ICT" duration-ms="34" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginSuccess -->
+      </class> <!-- Testing.TestLogin -->
+      <class name="Testing.TestingCustomer">
+        <test-method signature="addCustomerSucess()[pri:1, instance:Testing.TestingCustomer@3023df74]" started-at="2024-04-10T10:12:11 ICT" name="addCustomerSucess" finished-at="2024-04-10T10:12:11 ICT" duration-ms="38" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCustomerSucess -->
+        <test-method signature="addCustomerNullFullname()[pri:2, instance:Testing.TestingCustomer@3023df74]" started-at="2024-04-10T10:12:11 ICT" name="addCustomerNullFullname" finished-at="2024-04-10T10:12:11 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCustomerNullFullname -->
+        <test-method signature="addCustomerNullNumberPhone()[pri:3, instance:Testing.TestingCustomer@3023df74]" started-at="2024-04-10T10:12:11 ICT" name="addCustomerNullNumberPhone" finished-at="2024-04-10T10:12:11 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCustomerNullNumberPhone -->
+        <test-method signature="addCustomerIncorrectNumberPhone()[pri:4, instance:Testing.TestingCustomer@3023df74]" started-at="2024-04-10T10:12:11 ICT" name="addCustomerIncorrectNumberPhone" finished-at="2024-04-10T10:12:11 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCustomerIncorrectNumberPhone -->
+        <test-method signature="updateCustomerSucess()[pri:5, instance:Testing.TestingCustomer@3023df74]" started-at="2024-04-10T10:12:11 ICT" name="updateCustomerSucess" finished-at="2024-04-10T10:12:11 ICT" duration-ms="47" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateCustomerSucess -->
+        <test-method signature="updateCustomerNullSDT()[pri:6, instance:Testing.TestingCustomer@3023df74]" started-at="2024-04-10T10:12:11 ICT" name="updateCustomerNullSDT" finished-at="2024-04-10T10:12:11 ICT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateCustomerNullSDT -->
+        <test-method signature="updateCustomerNullName()[pri:7, instance:Testing.TestingCustomer@3023df74]" started-at="2024-04-10T10:12:11 ICT" name="updateCustomerNullName" finished-at="2024-04-10T10:12:11 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateCustomerNullName -->
+        <test-method signature="updateCustomerIncorrectPhone()[pri:8, instance:Testing.TestingCustomer@3023df74]" started-at="2024-04-10T10:12:11 ICT" name="updateCustomerIncorrectPhone" finished-at="2024-04-10T10:12:11 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateCustomerIncorrectPhone -->
+        <test-method signature="updateCustomerIncorrectName()[pri:9, instance:Testing.TestingCustomer@3023df74]" started-at="2024-04-10T10:12:11 ICT" name="updateCustomerIncorrectName" finished-at="2024-04-10T10:12:11 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateCustomerIncorrectName -->
+        <test-method signature="deleteNVNotFoundId()[pri:10, instance:Testing.TestingCustomer@3023df74]" started-at="2024-04-10T10:12:11 ICT" name="deleteNVNotFoundId" finished-at="2024-04-10T10:12:11 ICT" duration-ms="19" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteNVNotFoundId -->
+        <test-method signature="deleteSuccess()[pri:11, instance:Testing.TestingCustomer@3023df74]" started-at="2024-04-10T10:12:11 ICT" name="deleteSuccess" finished-at="2024-04-10T10:12:11 ICT" duration-ms="33" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteSuccess -->
+      </class> <!-- Testing.TestingCustomer -->
+      <class name="Testing.TestingEmployee">
+        <test-method signature="deleteNVNotFoundId()[pri:0, instance:Testing.TestingEmployee@4c371370]" started-at="2024-04-10T10:12:11 ICT" name="deleteNVNotFoundId" finished-at="2024-04-10T10:12:11 ICT" duration-ms="21" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteNVNotFoundId -->
+        <test-method signature="deleteSuccess()[pri:0, instance:Testing.TestingEmployee@4c371370]" started-at="2024-04-10T10:12:11 ICT" name="deleteSuccess" finished-at="2024-04-10T10:12:11 ICT" duration-ms="40" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteSuccess -->
+        <test-method signature="testAddCMNDIsExits()[pri:0, instance:Testing.TestingEmployee@4c371370]" started-at="2024-04-10T10:12:11 ICT" name="testAddCMNDIsExits" finished-at="2024-04-10T10:12:11 ICT" duration-ms="20" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddCMNDIsExits -->
+        <test-method signature="testAddInCorrectCMND()[pri:0, instance:Testing.TestingEmployee@4c371370]" started-at="2024-04-10T10:12:11 ICT" name="testAddInCorrectCMND" finished-at="2024-04-10T10:12:11 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddInCorrectCMND -->
+        <test-method signature="testAddMaNVIsExits()[pri:0, instance:Testing.TestingEmployee@4c371370]" started-at="2024-04-10T10:12:11 ICT" name="testAddMaNVIsExits" finished-at="2024-04-10T10:12:11 ICT" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddMaNVIsExits -->
+        <test-method signature="testAddNVSuccess()[pri:0, instance:Testing.TestingEmployee@4c371370]" started-at="2024-04-10T10:12:11 ICT" name="testAddNVSuccess" finished-at="2024-04-10T10:12:11 ICT" duration-ms="32" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddNVSuccess -->
+        <test-method signature="testAddNullCMND()[pri:0, instance:Testing.TestingEmployee@4c371370]" started-at="2024-04-10T10:12:11 ICT" name="testAddNullCMND" finished-at="2024-04-10T10:12:11 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddNullCMND -->
+        <test-method signature="testAddNullEmail()[pri:0, instance:Testing.TestingEmployee@4c371370]" started-at="2024-04-10T10:12:11 ICT" name="testAddNullEmail" finished-at="2024-04-10T10:12:11 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddNullEmail -->
+        <test-method signature="testAddNullFullname()[pri:0, instance:Testing.TestingEmployee@4c371370]" started-at="2024-04-10T10:12:11 ICT" name="testAddNullFullname" finished-at="2024-04-10T10:12:11 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddNullFullname -->
+        <test-method signature="testAddNullMaNV()[pri:0, instance:Testing.TestingEmployee@4c371370]" started-at="2024-04-10T10:12:11 ICT" name="testAddNullMaNV" finished-at="2024-04-10T10:12:11 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddNullMaNV -->
+        <test-method signature="testAddNullNumberPhone()[pri:0, instance:Testing.TestingEmployee@4c371370]" started-at="2024-04-10T10:12:11 ICT" name="testAddNullNumberPhone" finished-at="2024-04-10T10:12:11 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddNullNumberPhone -->
+        <test-method signature="updateIncorrectCMND()[pri:0, instance:Testing.TestingEmployee@4c371370]" started-at="2024-04-10T10:12:11 ICT" name="updateIncorrectCMND" finished-at="2024-04-10T10:12:11 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateIncorrectCMND -->
+        <test-method signature="updateIncorrectNumberPhone()[pri:0, instance:Testing.TestingEmployee@4c371370]" started-at="2024-04-10T10:12:11 ICT" name="updateIncorrectNumberPhone" finished-at="2024-04-10T10:12:11 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateIncorrectNumberPhone -->
+        <test-method signature="updateNVSuccess()[pri:0, instance:Testing.TestingEmployee@4c371370]" started-at="2024-04-10T10:12:11 ICT" name="updateNVSuccess" finished-at="2024-04-10T10:12:11 ICT" duration-ms="33" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateNVSuccess -->
+      </class> <!-- Testing.TestingEmployee -->
+      <class name="Testing.TestingCategory">
+        <test-method signature="insertNullId()[pri:1, instance:Testing.TestingCategory@3c19aaa5]" started-at="2024-04-10T10:12:10 ICT" name="insertNullId" finished-at="2024-04-10T10:12:10 ICT" duration-ms="567" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- insertNullId -->
+        <test-method signature="testInsertNullName()[pri:2, instance:Testing.TestingCategory@3c19aaa5]" started-at="2024-04-10T10:12:10 ICT" name="testInsertNullName" finished-at="2024-04-10T10:12:10 ICT" duration-ms="41" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInsertNullName -->
+        <test-method signature="insertSuccess()[pri:3, instance:Testing.TestingCategory@3c19aaa5]" started-at="2024-04-10T10:12:10 ICT" name="insertSuccess" finished-at="2024-04-10T10:12:10 ICT" duration-ms="76" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- insertSuccess -->
+        <test-method signature="testInsertExitsId()[pri:4, instance:Testing.TestingCategory@3c19aaa5]" started-at="2024-04-10T10:12:10 ICT" name="testInsertExitsId" finished-at="2024-04-10T10:12:10 ICT" duration-ms="48" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInsertExitsId -->
+        <test-method signature="insertSuccessWithoutDescription()[pri:5, instance:Testing.TestingCategory@3c19aaa5]" started-at="2024-04-10T10:12:10 ICT" name="insertSuccessWithoutDescription" finished-at="2024-04-10T10:12:10 ICT" duration-ms="59" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- insertSuccessWithoutDescription -->
+        <test-method signature="UpdateNullName()[pri:6, instance:Testing.TestingCategory@3c19aaa5]" started-at="2024-04-10T10:12:10 ICT" name="UpdateNullName" finished-at="2024-04-10T10:12:10 ICT" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UpdateNullName -->
+        <test-method signature="UpdateSuccessWithoutDescription()[pri:7, instance:Testing.TestingCategory@3c19aaa5]" started-at="2024-04-10T10:12:10 ICT" name="UpdateSuccessWithoutDescription" finished-at="2024-04-10T10:12:10 ICT" duration-ms="37" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UpdateSuccessWithoutDescription -->
+        <test-method signature="UpdateSuccessFullData()[pri:8, instance:Testing.TestingCategory@3c19aaa5]" started-at="2024-04-10T10:12:10 ICT" name="UpdateSuccessFullData" finished-at="2024-04-10T10:12:10 ICT" duration-ms="30" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UpdateSuccessFullData -->
+        <test-method signature="testDeleteLoaiSPWithProducts()[pri:9, instance:Testing.TestingCategory@3c19aaa5]" started-at="2024-04-10T10:12:10 ICT" name="testDeleteLoaiSPWithProducts" finished-at="2024-04-10T10:12:10 ICT" duration-ms="34" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteLoaiSPWithProducts -->
+        <test-method signature="deleteWithoutId()[pri:10, instance:Testing.TestingCategory@3c19aaa5]" started-at="2024-04-10T10:12:10 ICT" name="deleteWithoutId" finished-at="2024-04-10T10:12:11 ICT" duration-ms="44" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteWithoutId -->
+        <test-method signature="deleteLoaiSPNoExitsProduct()[pri:11, instance:Testing.TestingCategory@3c19aaa5]" started-at="2024-04-10T10:12:11 ICT" name="deleteLoaiSPNoExitsProduct" finished-at="2024-04-10T10:12:11 ICT" duration-ms="56" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteLoaiSPNoExitsProduct -->
+      </class> <!-- Testing.TestingCategory -->
+    </test> <!-- asm -->
+  </suite> <!-- Parameters Testing Test Suite -->
 </testng-results>
